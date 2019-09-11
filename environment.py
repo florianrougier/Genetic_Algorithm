@@ -13,8 +13,8 @@ class Environment():
     
     def __init__(self):
         
-        self.width = 600
-        self.height = 600
+        self.width = 1200
+        self.height = 630
         self.planetRadius = 10
         
         self.planets = list()
@@ -29,7 +29,7 @@ class Environment():
         self.rocketHeight = self.spriteRocket.get_rect().size[1]
         self.rotation = 0
         
-        self.spriteBackground = pg.image.load('space.jpg')
+        self.spriteBackground = pg.image.load('PetsInSpace.jpg')
         self.spriteBackground = pg.transform.smoothscale(self.spriteBackground, (self.width, self.height))
         
         
